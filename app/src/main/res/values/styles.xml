@@ -6,4 +6,32 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#FF9800</item>
     </style>
+    <!--for scoreButton all-->
+    <style name="scoreButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/scoreButtonMarginTop</item>
+    </style>
+
+    <style name="scoreTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/defaultScore</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:textColor">@color/score_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:padding">@dimen/scoreTextPadding</item>
+    </style>
+
+    <style name="teamTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/teamTxetSize</item>
+        <item name="android:textColor">@color/team_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
 </resources>

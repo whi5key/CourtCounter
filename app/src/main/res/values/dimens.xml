@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scoreButtonMarginTop">8dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="scoreTextPadding">16dp</dimen>
+    <dimen name="teamTxetSize">14sp</dimen>
+</resources>

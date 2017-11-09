@@ -7,18 +7,16 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
+@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    int scoreOfA = 0;
-    int scoreOfB = 0;
+    private int scoreOfA = 0;
+    private int scoreOfB = 0;
 
-
-
-    public void buttonOnClick(View view){
+    protected void buttonOnClick(View view){
         switch (view.getId()) {
             // for reset button
             case R.id.reset_button:
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 scoreOfB = 0;
                 displayScoreA(scoreOfA);
                 displayScoreB(scoreOfB);
-            break;
+                break;
             // for  TeamA
             case R.id.buttonA1:
                 scoreOfA = get1point(scoreOfA);
@@ -60,12 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-    public int get3point (int point) {
+    private int get3point (int point) {
         point = point + 3;
         return point;
     }
 
-    public int get2point (int point) {
+    private int get2point (int point) {
         point = point + 2;
         return point;
     }
@@ -74,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         point = point + 1;
         return point;
     }
-
-
 
     private void displayScoreA (int number) {
         TextView scoreA = ( TextView) findViewById(R.id.scoreA);
@@ -86,10 +82,5 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreB = (TextView) findViewById(R.id.scoreB);
         scoreB.setText("" + number);
     }
-
-
-
-
-
 
 }
